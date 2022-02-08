@@ -67,8 +67,8 @@ namespace Hub_Ui.Elements
 
 		private async void UpdateItem()
 		{
-			string itemId = await CDRAGON.ConvertItemIdToName(this.ItemId, false);
-			Bitmap icon = await CDRAGON.DownloadImageAsync(itemId);
+			string itemId = await CDRAGON.GetInstance().ConvertItemIdToName(this.ItemId, false);
+			Bitmap icon = await CDRAGON.GetInstance().GetItemImage(itemId);
 
 			ImageSource img = this.ImageSourceFromBitmap(icon);
 			pictureBox_item.Source = img;
