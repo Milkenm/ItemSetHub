@@ -4,12 +4,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Hub_Ui.Elements"
-             mc:Ignorable="d" Height="64" Width="64" MaxHeight="64" MaxWidth="64">
+             mc:Ignorable="d" Height="64" Width="64" MaxHeight="64" MaxWidth="64" SizeChanged="OnSizeChanged">
 	<UserControl.Resources>
 		<FontFamily x:Key="GillSans">/Fonts/#Gill_Sans_OTF</FontFamily>
 	</UserControl.Resources>
 	<Grid>
-		<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="450" Stroke="Black" VerticalAlignment="Top" Width="800"/>
 		<Image Name="pictureBox_item" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="64" Source="LoadingItem_PNG.png"/>
 		<Label Name="label_amount" Content="1" Margin="43,43,0,0" HorizontalContentAlignment="Center" Background="Black" Foreground="White" FontSize="10" FontFamily="{StaticResource GillSans}" VerticalContentAlignment="Center"/>
 	</Grid>

@@ -9,6 +9,8 @@ using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
+using Size = System.Windows.Size;
+
 namespace Hub_Ui.Elements
 {
 	/// <summary>
@@ -57,6 +59,29 @@ namespace Hub_Ui.Elements
 		{
 			this.InitializeComponent();
 			this.SetItem(itemId, amount);
+		}
+
+		private void OnSizeChanged(object sender, SizeChangedEventArgs e)
+		{
+			if (e.NewSize != this.GetControlSize())
+			{
+				this.SetControlSize();
+			}
+		}
+
+		private Size GetControlSize()
+		{
+			double height = pictureBox_item.Height;
+			double width = pictureBox_item.Width;
+			Size size = new Size(width, height);
+			return size;
+		}
+
+		private void SetControlSize()
+		{
+			Size size = this.GetControlSize();
+			this.Height = size.Height;
+			this.Width = size.Width;
 		}
 
 		public void SetItem(int itemId, int amount)

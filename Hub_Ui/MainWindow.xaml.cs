@@ -1,7 +1,5 @@
 ﻿using Hub_Core.ItemSet;
 
-using Hub_Ui.Elements;
-
 using Microsoft.Win32;
 
 using System;
@@ -38,9 +36,7 @@ namespace Hub_Ui
 			{
 				foreach (Item item in block.Items)
 				{
-					ItemRender itemRender = new ItemRender();
-					itemRender.SetItem(item.ItemId, item.Amount);
-					wrapPanel_items.Children.Add(itemRender);
+					itemsBlock_test.AddItem(item.ItemId, item.Amount);
 				}
 			}
 		}

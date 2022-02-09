@@ -59,7 +59,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Elements\ItemRender.xaml">
+    <Page Include="Elements\ItemRender\ItemRender.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Elements\ItemsBlock\ItemsBlock.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -71,8 +75,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Elements\ItemRender.xaml.cs">
+    <Compile Include="Elements\ItemRender\ItemRender.xaml.cs">
       <DependentUpon>ItemRender.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elements\ItemsBlock\ItemsBlock.xaml.cs">
+      <DependentUpon>ItemsBlock.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -107,7 +114,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Elements\ZzRot_Portal_PNG.png" />
+    <Resource Include="Elements\ItemRender\ZzRot_Portal_PNG.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ISH_Logo_PNG.png" />
@@ -122,7 +129,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Elements\LoadingItem_PNG.png" />
+    <Resource Include="Elements\ItemRender\LoadingItem_PNG.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
