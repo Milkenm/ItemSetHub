@@ -1,0 +1,136 @@
+{
+    "associatedChampions":
+    [
+        887
+    ],
+    "associatedMaps":
+    [
+        11,
+        12
+    ],
+    "blocks":
+    [
+        {
+            "hideIfSummonerSpell": "",
+            "items":
+            [
+                {
+                    "count": 1,
+                    "id": "1035"
+                },
+                {
+                    "count": 1,
+                    "id": "2031"
+                },
+                {
+                    "count": 1,
+                    "id": "3340"
+                }
+            ],
+            "showIfSummonerSpell": "",
+            "type": "Starting Items"
+        },
+        {
+            "hideIfSummonerSpell": "",
+            "items":
+            [
+                {
+                    "count": 1,
+                    "id": "4633"
+                }
+            ],
+            "showIfSummonerSpell": "",
+            "type": "Mythic"
+        },
+        {
+            "hideIfSummonerSpell": "",
+            "items":
+            [
+                {
+                    "count": 1,
+                    "id": "3047"
+                },
+                {
+                    "count": 1,
+                    "id": "3111"
+                },
+                {
+                    "count": 1,
+                    "id": "3158"
+                }
+            ],
+            "showIfSummonerSpell": "",
+            "type": "Boots"
+        },
+        {
+            "hideIfSummonerSpell": "",
+            "items":
+            [
+                {
+                    "count": 1,
+                    "id": "3115"
+                }
+            ],
+            "showIfSummonerSpell": "",
+            "type": "3rd Item"
+        },
+        {
+            "hideIfSummonerSpell": "",
+            "items":
+            [
+                {
+                    "count": 1,
+                    "id": "3165"
+                },
+                {
+                    "count": 1,
+                    "id": "3153"
+                }
+            ],
+            "showIfSummonerSpell": "",
+            "type": "4th Item"
+        },
+        {
+            "hideIfSummonerSpell": "",
+            "items":
+            [
+                {
+                    "count": 1,
+                    "id": "3065"
+                },
+                {
+                    "count": 1,
+                    "id": "3116"
+                }
+            ],
+            "showIfSummonerSpell": "",
+            "type": "5th Item"
+        },
+        {
+            "hideIfSummonerSpell": "",
+            "items":
+            [
+                {
+                    "count": 1,
+                    "id": "3089"
+                }
+            ],
+            "showIfSummonerSpell": "",
+            "type": "6th Item"
+        }
+    ],
+    "map": "HA",
+    "mode": "any",
+    "preferredItemSlots":
+    [
+        {
+            "id": "2031",
+            "preferredItemSlot": 1
+        }
+    ],
+    "sortrank": 9999,
+    "startedFrom": "blank",
+    "title": "Jun Gwen [v1.1]",
+    "type": "custom",
+    "uid": "917acb00-83ac-11ec-b8be-cba21657873c"
+}
